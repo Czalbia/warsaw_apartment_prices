@@ -1,7 +1,7 @@
 <div style="text-align: right"> By Jan Czałbowski </div>
 
 # **You want to predict the price for renting an apartment in Warsaw?** 
-Check out this apartment price prediction script that utilizes linear regression and a simple database to predict the price of an apartment.
+Check out this apartment price prediction script that utilizes linear regression and a simple [database](https://www.kaggle.com/datasets/beksultankarimov/warsaw-flat-rent-prices)  to predict the price of an apartment.
 For explanation of all the mathematics scroll down.
 
 ## **How does it work?**
