@@ -17,28 +17,30 @@ To calculate the optimal line of regression, minimizing the total sum of squares
 3. Solving the simultanious equations for $\hat{\beta_0}$ and $\hat{\beta_1}$ <br>
     -> To derive the complete forumla for the linear regression $Y = \hat{\beta_1}X + \hat{\beta_0}$
 
+To simplify $\sum_{i = 0}^{n}$ => $\sum$
+
 Formulas for calculating the mean: <br>
 
-$\overline{X} = \frac{\sum_{i = 0}^{n} Xi}{n}$
+$\overline{X} = \frac{\sum Xi}{n}$
 
-$\overline{Y} = \frac{\sum_{i = 0}^{n} Yi}{n}$
+$\overline{Y} = \frac{\sum Yi}{n}$
 
 ### **Step 1.** <br>
 
 **For $\hat{\beta_0}$** <br>
 
-$\frac{\partial }{\partial \beta_0} \sum_{i = 0}^{n} (Yi - \hat{Y})^2 = \sum_{i = 0}^{n} \frac{\partial }{\partial \beta_0}  (Yi - \hat{\beta_0} - \hat{\beta_1}Xi)^2 = -2\sum_{i = 0}^{n} (Yi - \hat{\beta_0} - \hat{\beta_1}Xi)$
+$\frac{\partial }{\partial \beta_0} \sum (Yi - \hat{Y})^2 = \sum \frac{\partial }{\partial \beta_0}  (Yi - \hat{\beta_0} - \hat{\beta_1}Xi)^2 = -2\sum (Yi - \hat{\beta_0} - \hat{\beta_1}Xi)$
 
 **For $\hat{\beta_1}$** <br>
 
-$\frac{\partial }{\partial \beta_1} \sum_{i = 0}^{n} (Yi - \hat{Y})^2 = \sum_{i = 0}^{n} \frac{\partial }{\partial \beta_1}  (Yi - \hat{\beta_0} - \hat{\beta_1}Xi)^2 = -2\sum_{i = 0}^{n} Xi(Yi - \hat{\beta_0} - \hat{\beta_1}Xi)$
+$\frac{\partial }{\partial \beta_1} \sum (Yi - \hat{Y})^2 = \sum \frac{\partial }{\partial \beta_1}  (Yi - \hat{\beta_0} - \hat{\beta_1}Xi)^2 = -2\sum Xi(Yi - \hat{\beta_0} - \hat{\beta_1}Xi)$
 
 ### **Step 2.** <br>
 
-$-2\sum_{i = 0}^{n} (Yi - \hat{\beta_0} - \hat{\beta_1}Xi = 0$<br>
-$-2\sum_{i = 0}^{n} Xi(Yi - \hat{\beta_0} - \hat{\beta_1}Xi) = 0$
+$-2\sum (Yi - \hat{\beta_0} - \hat{\beta_1}Xi = 0$<br>
+$-2\sum Xi(Yi - \hat{\beta_0} - \hat{\beta_1}Xi) = 0$
 
-To simplify $\sum_{i = 0}^{n}$ => $\sum$
+
 
 $\sum(Yi - \hat{\beta_0} - \hat{\beta_1}Xi) = 0$<br>
 $\sum Xi(Yi - \hat{\beta_0} - \hat{\beta_1}Xi) = 0$
